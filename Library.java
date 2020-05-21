@@ -11,5 +11,9 @@ public class Library {
         // GeneralBook gb = new GeneralBook();
         // gb.toString();
         // System.out.println(gb);
+        LibraryItem item = LibraryItemFactory.createItems(ItemInLibrary.NEWSPAPER);
+        item.setTitle("Charlotte Observer");
+        String title = item.getTitle();
+        System.out.println(title);
     }
 }
