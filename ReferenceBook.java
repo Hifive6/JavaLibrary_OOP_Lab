@@ -3,7 +3,7 @@ public class ReferenceBook extends Book{
     private String infoType;
     private int edition;
     
-    public ReferenceBook(String title, String author, String publisher, int publishYear, int ISBN, String infoType, int edition){
+    public ReferenceBook(String title, Author author, String publisher, int publishYear, int ISBN, String infoType, int edition){
         super(title, author, publisher, publishYear, ISBN);
         this.infoType = infoType;
         this.edition = edition;

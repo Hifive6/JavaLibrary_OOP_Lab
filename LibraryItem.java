@@ -1,14 +1,16 @@
 public class LibraryItem {
     //Private variable relating to all items in a Library
-    private String title, author, publisher;
+    private String title, publisher;
     private int publishYear, ISBN;
+    private Author author;
     
-    public LibraryItem(String title, String author, String publisher, int publishYear, int ISBN){
+    public LibraryItem(String title, Author author, String publisher, int publishYear, int ISBN){
         this.title = title;
         this.author = author;
         this.publisher = publisher;
         this.publishYear = publishYear;
         this.ISBN = ISBN;
+        
 
     }
 
@@ -18,7 +20,7 @@ public class LibraryItem {
         return title;
     }
 
-    public String getAuthor(){
+    public Author getAuthor(){
         return author;
     }
 
@@ -40,7 +42,7 @@ public class LibraryItem {
         this.title = title;
     }
 
-    public void setAuthor(String author){
+    public void setAuthor(Author author){
         this.author = author;
     }
 

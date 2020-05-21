@@ -6,7 +6,7 @@ public class Library {
         rb.toString();
         System.out.println(rb);
 
-        GeneralBook gb = new GeneralBook("Ready Player One", "Ernest Cline", "Crown Publishing Group", 2011, 00101001, "sci-fi", false);
+        GeneralBook gb = new GeneralBook();
         gb.toString();
         System.out.println(gb);
     }

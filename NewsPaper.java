@@ -2,7 +2,7 @@ public class NewsPaper extends Periodical{
 
     private boolean local;
 
-    public NewsPaper(String title, String author, String publisher, int publishYear, int ISBN, String category, String audience, boolean local){
+    public NewsPaper(String title, Author author, String publisher, int publishYear, int ISBN, String category, String audience, boolean local){
         super(title, author, publisher, publishYear, ISBN);
         this.local = local;
     }

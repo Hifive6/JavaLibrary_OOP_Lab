@@ -4,7 +4,7 @@ public class GeneralBook extends Book {
     private boolean fiction;
     
 
-    public GeneralBook(String title, String author, String publisher, int publishYear, int ISBN, String genre, boolean fiction){
+    public GeneralBook(String title, Author author, String publisher, int publishYear, int ISBN, String genre, boolean fiction){
         super(title, author, publisher, publishYear, ISBN);
         this.genre = genre;
         this.fiction = fiction;
