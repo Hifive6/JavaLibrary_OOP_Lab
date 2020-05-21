@@ -33,9 +33,9 @@ public class GeneralBook extends Book {
         String str = super.toString();
 
         if(fiction){
-           return str += ", Fiction";
+           return str += " Fiction";
         } else {
-            return str += ", Non-Fiction";
+            return str += " Non-Fiction";
         }
     }
 }
