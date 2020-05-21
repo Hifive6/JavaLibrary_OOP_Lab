@@ -2,5 +2,5 @@ interface Loanable {
     
     boolean isLoanable();
 
-    boolean isLate();
+    double lateCharge();
 }

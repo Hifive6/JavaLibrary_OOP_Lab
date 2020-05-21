@@ -4,6 +4,8 @@ public class LibraryItem {
     private int publishYear, ISBN;
     private Author author;
     
+    public LibraryItem(){}
+    
     public LibraryItem(String title, Author author, String publisher, int publishYear, int ISBN){
         this.title = title;
         this.author = author;

@@ -7,7 +7,10 @@ public class NewsPaper extends Periodical implements Reserveable{
         this.local = local;
     }
 
-    //getters
+    public NewsPaper() {
+	}
+
+	//getters
     public boolean getLocal(){
         return local;
     }

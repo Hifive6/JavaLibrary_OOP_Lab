@@ -2,6 +2,9 @@ public class ReferenceBook extends Book implements Loanable{
     
     private String infoType;
     private int edition;
+
+    public ReferenceBook() {
+	}
     
     public ReferenceBook(String title, Author author, String publisher, int publishYear, int ISBN, String infoType, int edition){
         super(title, author, publisher, publishYear, ISBN);
@@ -9,7 +12,9 @@ public class ReferenceBook extends Book implements Loanable{
         this.edition = edition;
     }
 
-    //getters for Reference Book
+    
+
+	//getters for Reference Book
     public String getInfoType(){
         return infoType;
     }
@@ -31,7 +36,7 @@ public class ReferenceBook extends Book implements Loanable{
         return false;
     }
 
-    public boolean isLate(){
-        return false;
+    public double lateCharge(){
+        return 2.00;
     }
 }

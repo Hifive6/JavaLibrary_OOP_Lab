@@ -2,6 +2,8 @@ public class Magazine extends Periodical implements Reserveable {
    private String category;
    private String audience;
 
+   public Magazine(){}
+
     public Magazine(String title, Author author, String publisher, int publishYear, int ISBN, String category, String audience){
         super(title, author, publisher, publishYear, ISBN);
         this.category = category;

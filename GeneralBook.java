@@ -3,6 +3,7 @@ public class GeneralBook extends Book implements Loanable{
     private String genre;
     private boolean fiction;
     
+    public GeneralBook(){}
 
     public GeneralBook(String title, Author author, String publisher, int publishYear, int ISBN, String genre, boolean fiction){
         super(title, author, publisher, publishYear, ISBN);
@@ -34,8 +35,8 @@ public class GeneralBook extends Book implements Loanable{
     }
 
     
-    public boolean isLate() { 
-        return false;
+    public double lateCharge() { 
+        return 2.00;
     }
 
     @Override
