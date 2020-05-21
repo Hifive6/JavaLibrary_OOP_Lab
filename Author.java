@@ -20,6 +20,10 @@ public class Author {
         return age;
     }
 
+    public PublishingCompany getPublishingCompany(){
+        return publisher;
+    }
+
     // setters
     public void setAName(String name){
         this.name = name;
@@ -27,6 +31,10 @@ public class Author {
 
     public void setAAge(int age){
         this.age = age;
+    }
+
+    public void setPublisher(PublishingCompany publisher) {
+        this.publisher = publisher;
     }
 
     @Override

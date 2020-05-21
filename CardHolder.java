@@ -1,5 +1,5 @@
 import java.util.ArrayList;
-import java.util.Collection;
+// import java.util.Collection;
 
 public class CardHolder {
     
@@ -65,6 +65,16 @@ public class CardHolder {
     public void setOverdueperiodicals(ArrayList<Periodical> overdueperiodicals) {
         this.overdueperiodicals = overdueperiodicals;
     }
+
+    //add books and periodicals to list
+    public void addOverdueBooks(Book book){
+        overduebooks.add(book);
+    }
+
+    public void addOverduePeriodicals(Periodical periodical){
+        overdueperiodicals.add(periodical);
+    }
+
 
     @Override
     public String toString(){

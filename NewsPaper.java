@@ -1,4 +1,4 @@
-public class NewsPaper extends Periodical{
+public class NewsPaper extends Periodical implements Reserveable{
 
     private boolean local;
 
@@ -15,6 +15,10 @@ public class NewsPaper extends Periodical{
     //setters
     public void setLocal(boolean local){
         this.local = local;
+    }
+
+    public boolean isReserable(){
+        return false;
     }
     
 }

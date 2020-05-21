@@ -1,4 +1,4 @@
-public class GeneralBook extends Book {
+public class GeneralBook extends Book implements Loanable{
     
     private String genre;
     private boolean fiction;
@@ -26,6 +26,16 @@ public class GeneralBook extends Book {
 
     public void setFiction(boolean fiction){
         this.fiction = fiction;
+    }
+
+    
+    public boolean isLoanable() {
+        return true;
+    }
+
+    
+    public boolean isLate() { 
+        return false;
     }
 
     @Override

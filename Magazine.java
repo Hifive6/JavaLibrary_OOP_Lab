@@ -1,4 +1,4 @@
-public class Magazine extends Periodical {
+public class Magazine extends Periodical implements Reserveable {
    private String category;
    private String audience;
 
@@ -26,5 +26,9 @@ public class Magazine extends Periodical {
 
     public void setAudience(String audience){
         this.audience = audience;
+    }
+
+    public boolean isReserable(){
+        return true;
     }
 }

@@ -1,4 +1,4 @@
-public class ReferenceBook extends Book{
+public class ReferenceBook extends Book implements Loanable{
     
     private String infoType;
     private int edition;
@@ -25,5 +25,13 @@ public class ReferenceBook extends Book{
 
     public void setEdition(int edition){
         this.edition = edition;
+    }
+
+    public boolean isLoanable(){
+        return false;
+    }
+
+    public boolean isLate(){
+        return false;
     }
 }
