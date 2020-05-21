@@ -1,26 +1,27 @@
 public class CardHolder {
     
-    private String firstName, lastName, nameOfLibrary;
+    private String name;
     private long idNumber;
+    private boolean checkout, reserve;
 
-    public CardHolder(String firstName, String lastName, String nameOfLibrary, long idNumber){
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.nameOfLibrary = nameOfLibrary;
+    public CardHolder(String name, long idNumber, boolean checkout, boolean reserve){
+        this.name = name;
         this.idNumber = idNumber;
+        this.checkout = checkout;
+        this.reserve = reserve;
     }
 
     //getters
-    public String getFirstName(){
-        return firstName;
+    public String getName(){
+        return name;
     }
 
-    public String getLastName(){
-        return lastName;
+    public boolean getCheckout(){
+        return checkout;
     }
 
-    public String getNameOfLibrary(){
-        return nameOfLibrary;
+    public boolean getReserve(){
+        return reserve;
     }
 
     public long getIdNumber(){
@@ -28,16 +29,16 @@ public class CardHolder {
     }
 
     //Setters
-    public void setFirstName(String firstName){
-        this.firstName = firstName;
+    public void setName(String name){
+        this.name = name;
     }
 
-    public void setLastName(String lastName){
-        this.lastName = lastName;
+    public void setCheckout(boolean checkout){
+        this.checkout = checkout;
     }
 
-    public void setNameOfLibrary(String nameOfLibrary){
-        this.nameOfLibrary = nameOfLibrary;
+    public void setReserve(boolean reserve){
+        this.reserve = reserve;
     }
 
     public void setIdNumber(long idNumber){
@@ -46,6 +47,6 @@ public class CardHolder {
 
     @Override
     public String toString(){
-        return getFirstName() + " " + getLastName() + " " + " " + getIdNumber() + ". ";
+        return name + " " + getIdNumber() + ". ";
     }
 }
