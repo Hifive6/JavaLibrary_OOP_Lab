@@ -61,6 +61,6 @@ public class LibraryItem {
 
     @Override
     public String toString(){
-        return "The Title of the book is " + getTitle() + " Authored by " + getAuthor() + " published in " + getPublishYear() + "."; 
+        return "The Title of the book is " + getTitle() + " Authored by " + Author.class.getName() + " published in " + getPublishYear() + "."; 
     }
 }

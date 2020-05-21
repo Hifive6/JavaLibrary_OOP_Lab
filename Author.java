@@ -1,10 +1,13 @@
 public class Author {
     private String name;
     private int age;
+    private PublishingCompany publisher;
 
-    public Author(String name, int age){
+    public Author(String name, int age, PublishingCompany publisher){
+        // super(publisher);
         this.name = name;
         this.age = age;
+        this.publisher = publisher;
 
     }
 
@@ -25,4 +28,12 @@ public class Author {
     public void setAAge(int age){
         this.age = age;
     }
+
+    @Override
+    public String toString(){
+        
+        return getAName() + " " + getAAge() + " " + publisher ;
+    }
+
+    
 }
